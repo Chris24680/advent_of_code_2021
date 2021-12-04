@@ -1,6 +1,3 @@
-require 'byebug'
-
-
 class Board
     require 'matrix'
 
