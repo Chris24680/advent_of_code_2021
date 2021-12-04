@@ -16,9 +16,7 @@ class Board
     end
 
     def bingo?
-        if @dabs.detect{ |row| row.all?(true) } || @dabs.transpose.detect{ |column| column.all?(true) }
-            return true
-        end
+        @dabs.detect{ |row| row.all?(true) } || @dabs.transpose.detect{ |column| column.all?(true) }
     end
 
     def score
