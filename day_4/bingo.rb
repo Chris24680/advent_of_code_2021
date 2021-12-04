@@ -10,7 +10,6 @@ class Board
     def dab(ball)
         location = Matrix[*@values].index(ball)
         if location
-            byebug unless @dabs[location[0]]
             @dabs[location[0]][location[1]] = true 
             @last_ball = ball
         end
